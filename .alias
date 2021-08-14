@@ -11,6 +11,12 @@ alias open="xdg-open"
 alias cb="clipboard"
 alias win="sudo grub-reboot 2 && reboot"
 alias dev="cd $DEV"
+alias pro="cd $DEV/Projects"
 alias st="speedtest"
 alias lofi="mpv https://www.youtube.com/watch\?v\=5qap5aO4i9A --no-video --volume=50 > /dev/null 2>&1 &"
+
+alias yc="yadm commit -a -S"
+alias ycm="yc -m"
+alias yca="yadm add"
+
 last(){ ls -1 $1 -t | head -n 1 }
