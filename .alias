@@ -18,5 +18,6 @@ alias lofi="mpv https://www.youtube.com/watch\?v\=5qap5aO4i9A --no-video --volum
 alias yc="yadm commit -a -S"
 alias ycm="yc -m"
 alias yca="yadm add"
+alias yp="yadm push"
 
 last(){ ls -1 $1 -t | head -n 1 }
