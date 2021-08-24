@@ -33,8 +33,8 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=true
 # export LDFLAGS="-L/prod/lib"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/pop/.oh-my-zsh"
-export GDFUSE="/home/pop/.gdfuse/default"
+export ZSH="$HOME/.oh-my-zsh"
+export GDFUSE="$HOME/.gdfuse/default"
 export DEV="$HOME/Dropbox/Dev"
 export VISUAL="vim"
 export EDITOR="vim"
