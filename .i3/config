@@ -40,7 +40,7 @@ bindsym Mod1+Tab exec rofi -kb-accept-entry '!Alt-Tab' -kb-row-down Alt-Tab -sho
 bindsym --release Mod4+a exec /usr/bin/shot
 
 # greenclip
-bindsym --release Mod4+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+bindsym --release Mod4+v exec rofi -show "clipboard:greenclip print" 
 
 # xprop
 bindsym --release Mod4+p exec xprop >> /tmp/xprop
