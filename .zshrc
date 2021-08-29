@@ -17,8 +17,13 @@ export XIM=fcitx
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
-export QT_DEVICE_PIXEL_RATIO=2
 export QT_AUTO_SCREEN_SCALE_FACTOR=true
+
+# Start wal background
+(cat ~/.cache/wal/sequences &)  
+
+# Eval bitwarden autocompletion
+eval $(bw completion --shell zsh)
 
 # CXX configs
 # export LD_LIBRARY_PATH=/prod/lib:/prod/lib64

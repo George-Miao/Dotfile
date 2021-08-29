@@ -11,4 +11,4 @@ append_path '.cargo/bin'
 
 export PATH
 
-export MANPATH="${MANPATH-$(manpath)}:$HOME/.npm-packages/bin/share/man"
+# export MANPATH="${MANPATH-$(manpath)}:$HOME/.npm-packages/bin/share/man"

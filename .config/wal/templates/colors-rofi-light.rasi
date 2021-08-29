@@ -1,5 +1,5 @@
 * {{
-  bg: {background}aa;
+  bg: {background};
   bg-alt: {color2};
   fg: {foreground};
   fg-alt: {color7};
