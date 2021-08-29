@@ -3,9 +3,10 @@ set $sup Mod4
 font pango:Cascadia Code 12
 
 # Start up
+exec --no-startup-id compton -bc
 exec --no-startup-id greenclip daemon
 exec --no-startup-id fcitx5
-exec --no-startup-id polybar top
+exec --no-startup-id ~/.config/polybar/i3wmthemer_bar_launch.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -24,7 +25,7 @@ set $right semicolon
 # use Mouse+Mod4 to drag floating windows to their wanted position
 floating_modifier Mod4 
 
-for_window [class=.*] border pixel 3
+for_window [class=.*] border pixel 0
 
 gaps inner 12
 
@@ -32,8 +33,8 @@ gaps inner 12
 bindsym Mod4+Return exec alacritty
 
 # rofi
-bindsym Mod1+space exec rofi -show run
-bindsym Mod1+Tab exec rofi -show window
+bindsym Mod1+space exec rofi -show combi
+bindsym Mod1+Tab exec rofi -kb-accept-entry '!Alt-Tab' -kb-row-down Alt-Tab -show window
 
 # screenshot
 bindsym --release Mod4+a exec /usr/bin/shot

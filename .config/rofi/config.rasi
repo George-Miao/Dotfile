@@ -1,19 +1,15 @@
 configuration {
-  padding: 4;
+  // padding: 4;
+  // column: 2;
   lines: 15;
-  font: "Cascadia Mono 15";
-	modi: "window,run,ssh,file-browser,combi,keys,Project:~/.config/rofi/custom/test.sh";
-  bw: 2;
-  show-icons: true;
-  icon-theme: "Papirus";
-  line-padding: 5;
+  font: "Cascadia Mono 16";
+	modi: "window,drun,run,ssh,file-browser,combi,keys,Project:~/.config/rofi/custom/test.sh";
+  show-icons: false;
   terminal: "alacritty";
   line-padding: 12;
   separator-style: "solid";
-  sidebar-mode: false;
-  fixed-num-lines: true;
-  hide-scrollbar: true;
   dpi: 90;
+  theme: "~/.cache/wal/colors-rofi-light.rasi";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
