@@ -1,16 +1,15 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
+# Scripts to run
+source $HOME/.alias
+source $HOME/.funcs
+source $HOME/.path
 
-NPM_PACKAGES="${HOME}/.npm-packages"
-
-# Set Path and Manpath
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH:$HOME/.cargo/bin:$NPM_PACKAGES/bin:$HOME/go/bin:$HOME/.local/bin:/usr/local/go/bin"
-export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export ZSH="$HOME/.oh-my-zsh"
+export GDFUSE="$HOME/.gdfuse/default"
+export DEV="$HOME/Dropbox/Dev"
+export VISUAL="vim"
+export EDITOR="vim"
 
 # Set IM to fcitx
 export XIM_PROGRAM=fcitx
@@ -32,41 +31,14 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=true
 # export CPPFLAGS="-I/prod/include"
 # export LDFLAGS="-L/prod/lib"
 
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-export GDFUSE="$HOME/.gdfuse/default"
-export DEV="$HOME/Dropbox/Dev"
-export VISUAL="vim"
-export EDITOR="vim"
-
 ZSH_THEME="robbyrussell"
 
 plugins=(git sudo httpie fasd zsh-completions)
 
 autoload -U compinit && compinit
 
-# Scripts to run
-source $HOME/.alias
-
-eval `dircolors $HOME/.dir_colors`
-
 source $ZSH/oh-my-zsh.sh
 
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
-# If proxy is needed
-# source $HOME/proxy.sh
-
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
@@ -100,50 +72,17 @@ ENABLE_CORRECTION="true"
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
+# Disable marking untracked files. Makes repository status check faster.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
 
 # Git ignore
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
 # fauna autocomplete setup
 FAUNA_AC_ZSH_SETUP_PATH=/home/pop/.cache/fauna-shell/autocomplete/zsh_setup && test -f $FAUNA_AC_ZSH_SETUP_PATH && source $FAUNA_AC_ZSH_SETUP_PATH;
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
 
 stty icrnl
 
@@ -154,5 +93,16 @@ fi
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
-source ~/.alias
-source ~/.funcs
+
+#############################################################################
+# Start of hygeia config block.
+# These lines were added by hygeia and are required for it to function
+# properly (including the comments!)
+# See https://github.com/nbigaouette/hygeia
+# WARNING: Those lines _need_ to be at the end of the file: hygeia needs to
+#          appear as soon as possible in the $PATH environment variable to
+#          to function properly.
+export HYGEIA_HOME="/home/pop/.hygeia"
+source "${HYGEIA_HOME}/shell/zsh/config.sh"
+# End of hygeia config block.
+#############################################################################

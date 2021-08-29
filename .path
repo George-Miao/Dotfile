@@ -1,0 +1,14 @@
+append_path () {
+  PATH="$HOME/$1:$PATH"
+}
+
+append_path 'bin'
+append_path 'go/bin'
+append_path '.local/bin'
+append_path '.local/lib/python3.9/bin'
+append_path '.npm-packages/bin'
+append_path '.cargo/bin'
+
+export PATH
+
+export MANPATH="${MANPATH-$(manpath)}:$HOME/.npm-packages/bin/share/man"
