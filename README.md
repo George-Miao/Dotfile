@@ -30,6 +30,10 @@ Collection of my dotfiles.
 
   Status bar
 
+- [PyWal](https://github.com/dylanaraps/pywal)
+
+  Theme generator. Dependency of rofi, polybar, shell and qutebrowser.
+
 - [QuteBrowser](https://qutebrowser.org/)
 
   Browser focus on keyboard
