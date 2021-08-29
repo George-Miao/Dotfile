@@ -1,8 +1,3 @@
-# Scripts to run
-source $HOME/.alias
-source $HOME/.funcs
-source $HOME/.path
-
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export ZSH="$HOME/.oh-my-zsh"
@@ -10,6 +5,11 @@ export GDFUSE="$HOME/.gdfuse/default"
 export DEV="$HOME/Dropbox/Dev"
 export VISUAL="vim"
 export EDITOR="vim"
+
+# Scripts to run
+source $HOME/.alias
+source $HOME/.funcs
+source $HOME/.path
 
 # Set IM to fcitx
 export XIM_PROGRAM=fcitx
