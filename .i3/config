@@ -28,6 +28,7 @@ floating_modifier Mod4
 for_window [class=.*] border pixel 0
 
 gaps inner 12
+gaps top 54
 
 # start a terminal
 bindsym Mod4+Return exec alacritty

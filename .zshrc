@@ -25,6 +25,9 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=true
 # Eval bitwarden autocompletion
 eval $(bw completion --shell zsh)
 
+# Disable completion for ssh-host lookup
+zstyle ':completion:*:ssh:*' hosts off
+
 # CXX configs
 # export LD_LIBRARY_PATH=/prod/lib:/prod/lib64
 # export LIBRARY_PATH=/prod/lib:/prod/lib64
@@ -44,7 +47,7 @@ autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
 
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
