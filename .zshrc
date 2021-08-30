@@ -22,8 +22,6 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=true
 # Start wal background
 (cat ~/.cache/wal/sequences &)  
 
-# Eval bitwarden autocompletion
-eval $(bw completion --shell zsh)
 
 # Disable completion for ssh-host lookup
 zstyle ':completion:*:ssh:*' hosts off
@@ -46,6 +44,9 @@ plugins=(git sudo httpie fasd zsh-completions)
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
+
+# Eval bitwarden autocompletion
+eval "$(bw completion --shell zsh); compdef _bw bw;"
 
 ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
@@ -102,6 +103,8 @@ export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
 
+
+
 #############################################################################
 # Start of hygeia config block.
 # These lines were added by hygeia and are required for it to function
@@ -114,3 +117,6 @@ export HYGEIA_HOME="/home/pop/.hygeia"
 source "${HYGEIA_HOME}/shell/zsh/config.sh"
 # End of hygeia config block.
 #############################################################################
+
+# opam configuration
+[[ ! -r /home/pop/.opam/opam-init/init.zsh ]] || source /home/pop/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

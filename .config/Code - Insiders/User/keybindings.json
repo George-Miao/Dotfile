@@ -332,7 +332,7 @@
     "command": "-workbench.action.nextEditor"
   },
   {
-    "key": "alt+;",
+    "key": "alt+/",
     "command": "findThenJump.initiate"
   },
   {

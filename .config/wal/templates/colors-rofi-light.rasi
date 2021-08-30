@@ -38,12 +38,13 @@ element-icon {{
 
 prompt {{
   spacing: 0;
+  background-color: @transparent;
 }}
 
 inputbar {{
   padding: 10px;
   background-color: @bg;
-  children: [ entry ];
+  children: [ prompt, entry ];
 }}
 
 entry {{
@@ -52,7 +53,7 @@ entry {{
 }}
 
 listview {{
-  lines: 15;
+  // lines: 15;
   scrollbar: false;
   background-color: @bg;
 }}

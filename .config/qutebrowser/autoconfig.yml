@@ -15,6 +15,7 @@ settings:
         <Alt+Right>: tab-next
         <Ctrl+Left>: back
         <Ctrl+Right>: forward
+        <Ctrl+p>: :spawn --userscript bitwarden.py
         x: tab-close
   content.notifications.enabled:
     https://www.reddit.com: false
