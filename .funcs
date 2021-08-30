@@ -142,3 +142,6 @@ function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
 
+function bw-unlock(){
+	export BW_SESSION=$(bw unlock $1 --raw)
+}
