@@ -84,7 +84,7 @@ COMPLETION_WAITING_DOTS="true"
 # Disable marking untracked files. Makes repository status check faster.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Would you like to use another custom folder than $ZSH/custom?
+# Would you like to use another custom folder xhan $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Git ignore
@@ -97,13 +97,10 @@ stty icrnl
 
 unset SSH_AGENT_PID
 if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-	  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 fi
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
-
-
-
 
 #############################################################################
 # Start of hygeia config block.

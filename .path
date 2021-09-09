@@ -1,14 +1,20 @@
-append_path () {
-  PATH="$HOME/$1:$PATH"
+# First in first out
+home () {
+  PATH="$PATH:$HOME/$1"
 }
 
-append_path 'bin'
-append_path 'go/bin'
-append_path '.local/bin'
-append_path '.local/lib/python3.9/bin'
-append_path '.npm-packages/bin'
-append_path '.cargo/bin'
+# First in last out
+abs () {
+  PATH="$1:$PATH"
+}
+
+home 'bin'
+home 'go/bin'
+home '.local/bin'
+home '.local/lib/python3.9/bin'
+home '.npm-packages/bin'
+home '.cargo/bin'
 
 export PATH
 
-# export MANPATH="${MANPATH-$(manpath)}:$HOME/.npm-packages/bin/share/man"
+export MANPATH="${MANPATH-$(manpath)}:$HOME/.npm-packages/bin/share/man"

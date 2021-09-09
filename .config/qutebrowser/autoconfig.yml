@@ -16,9 +16,12 @@ settings:
         <Ctrl+Left>: back
         <Ctrl+Right>: forward
         <Ctrl+p>: :spawn --userscript bitwarden.py
+        <F12>: devtools
         x: tab-close
   content.notifications.enabled:
     https://www.reddit.com: false
+  content.proxy:
+    global: http://localhost:7890/
   fonts.default_family:
     global: Cascadia Code PL
   qt.highdpi:

@@ -68,7 +68,7 @@ scrollbar {{
 
 window {{
   border: 3;
-  border-radius: 4px;
+  // border-radius: 4px;
   border-color: @fg-alt;
   background-color: @transparent;
   // padding: 10;

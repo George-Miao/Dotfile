@@ -28,11 +28,8 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "[Log]": {
-    "editor.wordWrap": "off",
-    "editor.fontSize": 10
-  },
-  // "http.proxy": "http://127.0.0.1:7890",
+  
+  "http.proxy": "http://127.0.0.1:7890",
 
   /* -------------------------------------------------------------------------- */
   /*                                 Tool Config                                */
@@ -57,65 +54,14 @@
   "cSpell.enabled": true,
   "cSpell.allowCompoundWords": true,
   "cSpell.experimental.enableRegexpView": true,
-  "cSpell.userWords": [
-    "Alacritty",
-    "Bili",
-    "CSRF",
-    "Clippy",
-    "Deribit",
-    "FOSS",
-    "Inoreader",
-    "Miao",
-    "Pokect",
-    "Qute",
-    "Rcmd",
-    "Reqs",
-    "Rofi",
-    "Rushia",
-    "Tung",
-    "Vercel",
-    "Yadm",
-    "actix",
-    "bangumi",
-    "canonicalize",
-    "cfworker",
-    "cmds",
-    "cond",
-    "consts",
-    "dbus",
-    "deflist",
-    "degit",
-    "ffmpeg",
-    "guobiao",
-    "hhmmss",
-    "imgs",
-    "imsize",
-    "insts",
-    "isahc",
-    "logtype",
-    "metadatas",
-    "mmap",
-    "movflags",
-    "nanos",
-    "popsdevbot",
-    "poptg",
-    "popx",
-    "pyenv",
-    "qutebrowser",
-    "repr",
-    "requestty",
-    "rfind",
-    "splitted",
-    "structopt",
-    "suimu",
-    "suisei",
-    "tungstenite",
-    "typekit",
-    "vanta",
-    "ytdl",
-    "zfrontier",
-    "ziranma"
-  ],
+  "cSpell.customDictionaries": {
+    "global": {
+      "addWords": true,
+      "description": "Global dictionary",
+      "path": "/home/pop/.config/Code - Insiders/User/dictionary.txt",
+      "name": "Global",
+    }
+  },
   /* Todo Tree */
   "todo-tree.filtering.excludeGlobs": ["**/node_modules"],
   "todo-tree.general.tags": [
@@ -230,6 +176,13 @@
   /*                          Language Overwrite Config                         */
   /* -------------------------------------------------------------------------- */
 
+  "files.associations": {
+    "MoeDarkrc": "properties",
+    "*.kvconfig": "properties",
+    "*.html": "html",
+    "*.json": "jsonc",
+    "config": "i3"
+  },
   "[typescript]": {},
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -249,14 +202,13 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "files.associations": {
-    "MoeDarkrc": "properties",
-    "*.kvconfig": "properties",
-    "*.html": "html",
-    "*.json": "jsonc",
-    "config": "i3"
+  "[Log]": {
+    "editor.wordWrap": "off",
+    "editor.fontSize": 14
   },
-  "security.workspace.trust.untrustedFiles": "newWindow",
-  "redhat.telemetry.enabled": false,
-  "git.ignoreRebaseWarning": true,
+  "[code-runner-output]": {
+    "editor.wordWrap": "off",
+    "editor.fontSize": 13.5,
+    "editor.lineHeight": 1.1
+  }
 }

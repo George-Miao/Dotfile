@@ -50,7 +50,7 @@ exec --no-startup-id i3 workspace 2:IM
 exec --no-startup-id telegram-desktop
 
 # Others
-exec --no-startup-id i3 gaps top current set 54
+exec --no-startup-id i3 gaps top current set 55
 
 # ---------------------------------------------------------------------------- #
 #                                     Binds                                    #
@@ -68,15 +68,14 @@ bindsym $mod+Return exec alacritty
 # Rofi
 bindsym $alt+space exec rofi -show combi
 bindsym $alt+Tab exec rofi -kb-accept-entry '!Alt-Tab' -kb-row-down Alt-Tab -show window
+bindsym $mod+q exec ~/.config/rofi/scripts/wiki.sh
+bindsym --release $mod+v exec rofi -show "clipboard:greenclip print" 
 
 # Switch between workspaces
 bindsym $mod+Tab exec i3 workspace next
 
 # Screenshot
 bindsym --release $mod+a exec /usr/bin/shot
-
-# Greenclip
-bindsym --release $mod+v exec rofi -show "clipboard:greenclip print" 
 
 # Xprop
 bindsym --release $mod+p exec xprop >> /tmp/xprop
