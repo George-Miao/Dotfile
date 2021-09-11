@@ -28,13 +28,10 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  
   "http.proxy": "http://127.0.0.1:7890",
-
   /* -------------------------------------------------------------------------- */
   /*                                 Tool Config                                */
   /* -------------------------------------------------------------------------- */
-
   /* VS intellicode */
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   /* Git */
@@ -63,7 +60,9 @@
     }
   },
   /* Todo Tree */
-  "todo-tree.filtering.excludeGlobs": ["**/node_modules"],
+  "todo-tree.filtering.excludeGlobs": [
+    "**/node_modules"
+  ],
   "todo-tree.general.tags": [
     "BUG",
     "HACK",
@@ -82,8 +81,13 @@
   /* importSorter */
   "importSorter.importStringConfiguration.hasSemicolon": false,
   /* AutoCloseTag */
-  "auto-close-tag.activationOnLanguage": ["*"],
-  "auto-close-tag.disableOnLanguage": ["typescript", "rust"],
+  "auto-close-tag.activationOnLanguage": [
+    "*"
+  ],
+  "auto-close-tag.disableOnLanguage": [
+    "typescript",
+    "rust"
+  ],
   /* Minify */
   "minify.minifyExistingOnSave": true,
   /* Qiniu */
@@ -142,7 +146,6 @@
   "scrollFaster.scrollByLines": 4,
   "scrollFaster.cursorFollowsScroll": true,
   /********** Language Config **********/
-
   /** Typescript **/
   "typescript.format.enable": true,
   "typescript.format.semicolons": "remove",
@@ -170,12 +173,16 @@
   "go.useLanguageServer": true,
   /* SVG */
   "svg.preview.mode": "svg",
-  "togglequotes.chars": ["\"", "'", "`"],
-
+  "togglequotes.chars": [
+    "\"",
+    "'",
+    "`"
+  ],
+  /* Workspace Sidebar */
+  "workspaceSidebar.folder": "~/Dropbox/Dev/Workspaces",
   /* -------------------------------------------------------------------------- */
   /*                          Language Overwrite Config                         */
   /* -------------------------------------------------------------------------- */
-
   "files.associations": {
     "MoeDarkrc": "properties",
     "*.kvconfig": "properties",
@@ -191,7 +198,9 @@
     "editor.defaultFormatter": "matklad.rust-analyzer",
     "editor.tabSize": 4
   },
-  "[jsonc]": {},
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "[json]": {},
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
@@ -204,12 +213,11 @@
   },
   "[Log]": {
     "editor.wordWrap": "off",
-    "editor.fontSize": 14
+    "editor.fontSize": 11
   },
   "[code-runner-output]": {
     "editor.wordWrap": "off",
-    "editor.fontSize": 13.5,
+    "editor.fontSize": 11,
     "editor.lineHeight": 1.1
   },
-  "workspaceSidebar.folder": "~/Dropbox/Dev/Workspaces"
 }
