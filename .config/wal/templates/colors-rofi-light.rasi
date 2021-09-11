@@ -30,6 +30,13 @@ element selected {{
 element {{
   background-color: @transparent;
   spacing: 16px;
+  text-color: @fg;
+}}
+
+element-text {{
+  background-color: @transparent;
+  text-color: @fg-alt;
+  padding: 5 0 5 15;
 }}
 
 element-icon {{
@@ -38,11 +45,12 @@ element-icon {{
 
 prompt {{
   spacing: 0;
+  font: "mono 18";
   background-color: @transparent;
 }}
 
 inputbar {{
-  padding: 10px;
+  padding: 20px;
   background-color: @bg;
   children: [ prompt, entry ];
 }}

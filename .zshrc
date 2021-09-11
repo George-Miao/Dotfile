@@ -1,3 +1,11 @@
+zstyle ':completion:*:ssh:*' hosts off
+
+ZSH_THEME="robbyrussell"
+
+plugins=(git sudo httpie fasd zsh-completions)
+
+autoload -U compinit && compinit
+
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export ZSH="$HOME/.oh-my-zsh"
@@ -7,6 +15,7 @@ export VISUAL="vim"
 export EDITOR="vim"
 
 # Scripts to run
+source $ZSH/oh-my-zsh.sh
 source $HOME/.alias
 source $HOME/.funcs
 source $HOME/.path
@@ -21,34 +30,6 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=true
 
 # Start wal background
 (cat ~/.cache/wal/sequences &)  
-
-
-# Disable completion for ssh-host lookup
-zstyle ':completion:*:ssh:*' hosts off
-
-# CXX configs
-# export LD_LIBRARY_PATH=/prod/lib:/prod/lib64
-# export LIBRARY_PATH=/prod/lib:/prod/lib64
-# export CDPATH=.:/prod/:/prod/projects/:$CDPATH
-# export CC=/prod/bin/gcc
-# export CXX=/prod/bin/g++
-# export CMAKE_C_COMPILER=/prod/bin/gcc
-# export CMAKE_CXX_COMPILER=/prod/bin/g++
-# export CPPFLAGS="-I/prod/include"
-# export LDFLAGS="-L/prod/lib"
-
-ZSH_THEME="robbyrussell"
-
-plugins=(git sudo httpie fasd zsh-completions)
-
-autoload -U compinit && compinit
-
-source $ZSH/oh-my-zsh.sh
-
-# Eval bitwarden autocompletion
-eval "$(bw completion --shell zsh); compdef _bw bw;"
-
-ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -87,12 +68,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Would you like to use another custom folder xhan $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Git ignore
-function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
-
-# fauna autocomplete setup
-FAUNA_AC_ZSH_SETUP_PATH=/home/pop/.cache/fauna-shell/autocomplete/zsh_setup && test -f $FAUNA_AC_ZSH_SETUP_PATH && source $FAUNA_AC_ZSH_SETUP_PATH;
-
 stty icrnl
 
 unset SSH_AGENT_PID
@@ -117,3 +92,6 @@ source "${HYGEIA_HOME}/shell/zsh/config.sh"
 
 # opam configuration
 [[ ! -r /home/pop/.opam/opam-init/init.zsh ]] || source /home/pop/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# bitwarden auto complete
+eval "$(bw completion --shell zsh); compdef _bw bw;"

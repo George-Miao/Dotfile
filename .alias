@@ -20,4 +20,6 @@ alias ycm="yc -m"
 alias yca="yadm add"
 alias yp="yadm push"
 
-last(){ ls -1 $1 -t | head -n 1 }
+alias ls="lsd"
+alias ll="lsd -lt --group-dirs first --date \"+%b %d - %H:%M\""
+alias la="ll -a"

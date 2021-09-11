@@ -210,5 +210,6 @@
     "editor.wordWrap": "off",
     "editor.fontSize": 13.5,
     "editor.lineHeight": 1.1
-  }
+  },
+  "workspaceSidebar.folder": "~/Dropbox/Dev/Workspaces"
 }

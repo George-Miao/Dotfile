@@ -145,3 +145,7 @@ function tre() {
 function bw-unlock(){
 	export BW_SESSION=$(bw unlock $1 --raw)
 }
+
+function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
+
+function last(){ ls -1 $1 -t | head -n 1 }

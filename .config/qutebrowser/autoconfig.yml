@@ -21,7 +21,7 @@ settings:
   content.notifications.enabled:
     https://www.reddit.com: false
   content.proxy:
-    global: http://localhost:7890/
+    global: http://127.0.0.1:7890
   fonts.default_family:
     global: Cascadia Code PL
   qt.highdpi:

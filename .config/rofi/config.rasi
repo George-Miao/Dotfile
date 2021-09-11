@@ -3,7 +3,7 @@ configuration {
   // column: 2;
   lines: 15;
   font: "Cascadia Mono 16";
-	modi: "window,drun,run,ssh,file-browser,combi,keys";
+	modi: "window,drun,run,ssh,filebrowser,combi,keys";
   show-icons: false;
   terminal: "alacritty";
   line-padding: 12;
