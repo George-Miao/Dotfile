@@ -1,11 +1,12 @@
 # My Dotfiles - Desktop
 
-Config set:
+Collection of my dotfiles, handled with yadm.
+
+## Config set (branches):
 
 - Desktop
 - [Server (Minimum)](https://github.com/George-Miao/Dotfile/tree/minimum)
 
-Collection of my dotfiles.
 
 <a href="https://ibb.co/PFCC27P"><img src="https://i.ibb.co/mbzznL2/tmph-Yf-BMojqi3.png" alt="tmph-Yf-BMojqi3" border="0"></a>
 
