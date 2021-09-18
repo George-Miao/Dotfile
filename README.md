@@ -1,4 +1,9 @@
-# My Dotfiles
+# My Dotfiles - Desktop
+
+Config set:
+
+- Desktop
+- [Server (Minimum)](https://github.com/George-Miao/Dotfile/tree/minimum)
 
 Collection of my dotfiles.
 
@@ -6,52 +11,26 @@ Collection of my dotfiles.
 
 ## Config files
 
-- [Alacritty](https://github.com/alacritty/alacritty)
+- [Alacritty](https://github.com/alacritty/alacritty) - Terminal emulator
 
-  Terminal emulator
+- [Curl](https://curl.se) - cURL
 
-- [Curl](https://curl.se)
+- [GreenClip](https://github.com/erebe/greenclip) - Clipboard manager intergrated with [Rofi](https://github.com/davatorium/rofi) --[Hygeia](https://github.com/hygieia/hygieia) - Python version manager like pyenv, but in [Rust](https://rust-lang.org) --[i3](https://github.com/Airblader/i3) - i3 tiling window manager, i3-gaps fork
 
-  cURL
+- [Polybar](https://github.com/polybar/polybar) - Status bar
 
-- [GreenClip](https://github.com/erebe/greenclip)
+- [PyWal](https://github.com/dylanaraps/pywal) - Theme generator. Dependency of rofi, polybar, shell and qutebrowser.
 
-  Clipboard manager intergrated with [Rofi](https://github.com/davatorium/rofi)
+- [QuteBrowser](https://qutebrowser.org/) - Browser focus on keyboard
 
-- [Hygeia](https://github.com/hygieia/hygieia)
+- [Rofi](https://github.com/davatorium/rofi) - App launcher, switcher, and more
 
-  Python version manager like pyenv, but in [Rust](https://rust-lang.org)
+- [Yadm](https://github.com/TheLocehiliosan/yadm) - Dot file manager
 
-- [i3](https://github.com/Airblader/i3)
+- [Zsh](https://www.zsh.org/) & [Oh-My-Zsh](https://ohmyz.sh/) - Shell
 
-  i3 tiling window manager, i3-gaps fork
+## Scripts
 
-- [Polybar](https://github.com/polybar/polybar)
-
-  Status bar
-
-- [PyWal](https://github.com/dylanaraps/pywal)
-
-  Theme generator. Dependency of rofi, polybar, shell and qutebrowser.
-
-- [QuteBrowser](https://qutebrowser.org/)
-
-  Browser focus on keyboard
-
-- [Rofi](https://github.com/davatorium/rofi)
-
-  App launcher, switcher, and more
-
-- [Yadm](https://github.com/TheLocehiliosan/yadm)
-
-  Dot file manager
-
-- [Zsh](https://www.zsh.org/) & [Oh-My-Zsh](https://ohmyz.sh/)
-
-  Shell
-
-## Others
-
-- [Aliases](./tree/master/.alias)
-- [Funcs](./tree/master/.alias)
-- [Paths](./tree/master/.path)
+- [Aliases](./blob/master/.alias) - Aliases
+- [Funcs](./blob/master/.alias) - Helper functions
+- [Paths](./blob/master/.path) - Setting up `PATH`
