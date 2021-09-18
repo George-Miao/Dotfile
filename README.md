@@ -1,6 +1,6 @@
 # My Dotfiles - Minimum
 
-Collection of my dotfiles, for server or headless environment.
+Collection of my dotfiles, for server or headless environment. Handled with yadm.
 
 Config set:
 
@@ -13,6 +13,8 @@ Config set:
 
 - [Hygeia](https://github.com/hygieia/hygieia) - Python version manager like pyenv, but in [Rust](https://rust-lang.org)
 
+- [yadm](https://yadm.io) - Yet another dotfiles manager
+  
 - [Zsh](https://www.zsh.org/) & [Oh-My-Zsh](https://ohmyz.sh/) - Shell
 
 ## Scripts
