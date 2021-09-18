@@ -78,6 +78,7 @@
   /* Gitlens */
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.defaultGravatarsStyle": "mp",
+  "gitlens.statusBar.enabled": false,
   /* importSorter */
   "importSorter.importStringConfiguration.hasSemicolon": false,
   /* AutoCloseTag */
