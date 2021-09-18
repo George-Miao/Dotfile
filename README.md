@@ -19,6 +19,6 @@ Config set:
 
 ## Scripts
 
-- [Aliases](./blob/master/.alias) - Aliases
-- [Funcs](./blob/master/.alias) - Helper functions
-- [Paths](./blob/master/.path) - Setting up `PATH`
+- [Aliases](.alias) - Aliases
+- [Funcs](.alias) - Helper functions
+- [Paths](.path) - Setting up `PATH`
