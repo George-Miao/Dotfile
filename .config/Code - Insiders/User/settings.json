@@ -220,4 +220,5 @@
     "editor.lineHeight": 1.1
   },
   "security.workspace.trust.untrustedFiles": "open",
+  "redhat.telemetry.enabled": false,
 }

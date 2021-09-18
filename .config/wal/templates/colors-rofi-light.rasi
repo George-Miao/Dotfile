@@ -17,6 +17,29 @@ mainbox {{
   background-color: @bg;
 }}
 
+inputbar {{
+  padding: 20px;
+  background-color: @bg;
+  children: [ prompt, entry ];
+}}
+
+prompt {{
+  spacing: 0;
+  font: "mono 18";
+  background-color: @transparent;
+}}
+
+entry {{
+  spacing:    0;
+  background-color: @transparent;
+}}
+
+listview {{
+  // lines: 15;
+  scrollbar: false;
+  background-color: @bg;
+}}
+
 element, entry, prompt {{
   padding: 14;
   text-color: @fg-alt;
@@ -42,30 +65,6 @@ element-text {{
 element-icon {{
   size: 18px;
 }}
-
-prompt {{
-  spacing: 0;
-  font: "mono 18";
-  background-color: @transparent;
-}}
-
-inputbar {{
-  padding: 20px;
-  background-color: @bg;
-  children: [ prompt, entry ];
-}}
-
-entry {{
-  spacing:    0;
-  background-color: @transparent;
-}}
-
-listview {{
-  // lines: 15;
-  scrollbar: false;
-  background-color: @bg;
-}}
-
 
 scrollbar {{
   background-color: @bg-alt;
