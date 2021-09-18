@@ -2,22 +2,21 @@
 
 Collection of my dotfiles, for server or headless environment.
 
+Config set:
+
+- [Desktop](https://github.com/George-Miao/Dotfile)
+- Server (Minimum)
+
 ## Config files
 
-- [Curl](https://curl.se)
+- [Curl](https://curl.se) - cURL
 
-  cURL
+- [Hygeia](https://github.com/hygieia/hygieia) - Python version manager like pyenv, but in [Rust](https://rust-lang.org)
 
-- [Hygeia](https://github.com/hygieia/hygieia)
+- [Zsh](https://www.zsh.org/) & [Oh-My-Zsh](https://ohmyz.sh/) - Shell
 
-  Python version manager like pyenv, but in [Rust](https://rust-lang.org)
+## Scripts
 
-- [Zsh](https://www.zsh.org/) & [Oh-My-Zsh](https://ohmyz.sh/)
-
-  Shell
-
-## Others
-
-- [Aliases](./tree/master/.alias)
-- [Funcs](./tree/master/.alias)
-- [Paths](./tree/master/.path)
+- [Aliases](./blob/master/.alias) - Aliases
+- [Funcs](./blob/master/.alias) - Helper functions
+- [Paths](./blob/master/.path) - Setting up `PATH`
