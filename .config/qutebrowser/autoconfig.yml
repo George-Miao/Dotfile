@@ -17,11 +17,16 @@ settings:
         <Ctrl+Right>: forward
         <Ctrl+p>: :spawn --userscript bitwarden.py
         <F12>: devtools
+        pl: :spawn --userscript bitwarden.py
         x: tab-close
   content.notifications.enabled:
     https://www.reddit.com: false
   content.proxy:
     global: http://127.0.0.1:7890
+  editor.command:
+    global:
+    - code-insiders
+    - '{file}'
   fonts.default_family:
     global: Cascadia Code PL
   qt.highdpi:

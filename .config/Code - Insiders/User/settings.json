@@ -221,4 +221,15 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "redhat.telemetry.enabled": false,
+  "[dockercompose]": {
+    "editor.defaultFormatter": "",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
 }

@@ -1,4 +1,5 @@
 import os
+from typing import List
 import prctl
 import subprocess
 import signal
@@ -48,6 +49,9 @@ c.statusbar.padding = {
     "left": 6,
     "right": 6,
 }
+
+css = ['base']
+c.content.user_stylesheets = list(map(lambda x: f"css/{x}.css", css))
 
 c.aliases['src'] = 'config-source'
 
