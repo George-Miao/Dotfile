@@ -194,7 +194,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[rust]": {
-    "editor.defaultFormatter": "matklad.rust-analyzer",
+    "editor.defaultFormatter": "rust-lang.rust",
     "editor.tabSize": 4
   },
   "[jsonc]": {
@@ -222,7 +222,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "redhat.telemetry.enabled": false,
   "[dockercompose]": {
-    "editor.defaultFormatter": "",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",

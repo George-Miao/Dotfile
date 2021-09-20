@@ -24,6 +24,8 @@ Collection of my dotfiles, handled with yadm.
 
 - [QuteBrowser](https://qutebrowser.org/) - Browser focus on keyboard
 
+- [Ranger](https://github.com/ranger/ranger) - Console file brwoser 
+
 - [Rofi](https://github.com/davatorium/rofi) - App launcher, switcher, and more
 
 - [Yadm](https://github.com/TheLocehiliosan/yadm) - Dot file manager

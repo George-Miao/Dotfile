@@ -1,6 +1,6 @@
 zstyle ':completion:*:ssh:*' hosts off
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="cypher"
 
 plugins=(git sudo httpie fasd zsh-completions)
 
