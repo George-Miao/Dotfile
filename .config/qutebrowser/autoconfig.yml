@@ -19,7 +19,10 @@ settings:
         <F12>: devtools
         pl: :spawn --userscript bitwarden.py
         x: tab-close
+  content.geolocation:
+    https://www.google.com.hk: false
   content.notifications.enabled:
+    https://www.bennish.net: true
     https://www.reddit.com: false
   content.proxy:
     global: http://127.0.0.1:7890
