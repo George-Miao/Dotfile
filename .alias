@@ -14,6 +14,7 @@ alias dev="cd $DEV"
 alias pro="cd $DEV/Projects"
 alias st="speedtest"
 alias lofi="mpv https://www.youtube.com/watch\?v\=5qap5aO4i9A --no-video --volume=50 > /dev/null 2>&1 &"
+alias sys="systemctl"
 
 alias y="ydcv -x"
 
