@@ -1,0 +1,75 @@
+include-file = ~/.config/polybar/modules.ini
+
+[module/blank]
+type = custom/text
+content = " "
+
+[settings]
+screenchange-reload = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+[color]
+background = ${xrdb:color0:#222}
+color1 = ${xrdb:color2}
+color2 = ${xrdb:color4}
+color3 = ${xrdb:color7}
+dark = #1E272B
+green = #78824b
+bright = #B97446
+
+[bar/base]
+height = 60
+radius = 0
+
+border-size = 4
+border-color = #00000000
+
+background = ${color.background}
+foreground = ${color.color3}
+
+offset-y = 10
+
+dpi = 120
+
+font-0 = "Cascadia Code PL:size=12;3"
+font-1 = "Font Awesome:style=Solid:size=10;3"
+font-2 = "Font Awesome 5 Free:style=Solid:size=10;3"
+font-3 = "Noto Sans Symbols2:size=10;3"
+
+wm-restack = i3
+override-redirect = true
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/left]
+inherit = bar/base
+width = 21%
+offset-x = 15
+
+modules-left = i3 powermenu
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+[bar/music]
+inherit = bar/base
+
+; Keet at right
+; offset-x = 59.4%
+
+; Keep in center
+offset-x = 35.6%
+width = 28%
+modules-center = music
+
+[bar/right]
+inherit = bar/base
+
+offset-x = 87.6%
+width = 12%
+modules-left = audio 
+modules-right = date

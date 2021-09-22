@@ -33,7 +33,7 @@ assign [class="TelegramDesktop"] 2
 # ---------------------------------------------------------------------------- #
 
 # Background
-exec --no-startup-id wal -i ~/.wallpaper
+exec --no-startup-id wal -i ~/.wallpaper -o ~/.cache/wal/dunst.sh
 exec --no-startup-id picom --config ~/.config/picom.conf -b
 exec --no-startup-id greenclip daemon
 exec --no-startup-id fcitx5
