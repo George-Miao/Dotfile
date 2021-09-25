@@ -45,9 +45,6 @@ exec --no-startup-id code-insiders
 exec --no-startup-id alacritty
 exec --no-startup-id i3-layout-manager home
 
-exec --no-startup-id i3 workspace 2:IM
-exec --no-startup-id telegram-desktop
-
 # Others
 exec --no-startup-id i3 gaps top current set 55
 

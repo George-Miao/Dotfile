@@ -13,6 +13,8 @@ settings:
       normal:
         <Alt+Left>: tab-prev
         <Alt+Right>: tab-next
+        <Alt+Shift+Left>: tab-move -
+        <Alt+Shift+Right>: tab-move +
         <Ctrl+Left>: back
         <Ctrl+Right>: forward
         <Ctrl+p>: :spawn --userscript bitwarden.py
@@ -22,10 +24,12 @@ settings:
   content.geolocation:
     https://www.google.com.hk: false
   content.notifications.enabled:
+    https://blog.csdn.net: false
+    https://webk.telegram.org: true
     https://www.bennish.net: true
     https://www.reddit.com: false
   content.proxy:
-    global: http://127.0.0.1:7890
+    global: http://localhost:7890
   editor.command:
     global:
     - code-insiders
