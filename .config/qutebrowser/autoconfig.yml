@@ -11,6 +11,7 @@ settings:
   bindings.commands:
     global:
       normal:
+        +: zoom
         <Alt+Left>: tab-prev
         <Alt+Right>: tab-next
         <Alt+Shift+Left>: tab-move -
@@ -19,17 +20,21 @@ settings:
         <Ctrl+Right>: forward
         <Ctrl+p>: :spawn --userscript bitwarden.py
         <F12>: devtools
+        '=': zoom-in
         pl: :spawn --userscript bitwarden.py
         x: tab-close
   content.geolocation:
+    global: ask
+    https://www.google.com: true
     https://www.google.com.hk: false
   content.notifications.enabled:
     https://blog.csdn.net: false
+    https://mail.google.com: true
     https://webk.telegram.org: true
     https://www.bennish.net: true
     https://www.reddit.com: false
   content.proxy:
-    global: http://localhost:7890
+    global: http://localhost:7890/
   editor.command:
     global:
     - code-insiders
@@ -44,4 +49,4 @@ settings:
   url.start_pages:
     global: https://google.com
   zoom.default:
-    global: 120%
+    global: 125%
