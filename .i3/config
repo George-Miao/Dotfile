@@ -39,11 +39,9 @@ exec --no-startup-id fcitx5
 exec --no-startup-id ~/.config/polybar/i3wmthemer_bar_launch.sh
 
 # Foreground
-exec --no-startup-id i3 workspace 1:Main
 exec --no-startup-id qutebrowser
-exec --no-startup-id code-insiders
 exec --no-startup-id alacritty
-exec --no-startup-id i3-layout-manager home
+exec --no-startup-id i3-layout-manager split
 
 # Others
 exec --no-startup-id i3 gaps top current set 55

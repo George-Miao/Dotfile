@@ -34,7 +34,7 @@ settings:
     https://www.bennish.net: true
     https://www.reddit.com: false
   content.proxy:
-    global: http://localhost:7890/
+    global: http://proxy.lan:7890/
   editor.command:
     global:
     - code-insiders

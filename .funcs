@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Reload GnuPG agent
+function reload_gpg() {
+	gpgconf --kill gpg-agent
+	gpg-connect-agent updatestartuptty /bye
+}
+
 # Create a new directory and enter it
 function mkd() {
 	mkdir -p "$@" && cd "$_";

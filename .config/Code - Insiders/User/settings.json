@@ -11,12 +11,12 @@
   "editor.suggestSelection": "first",
   "editor.formatOnSave": true,
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.linkedEditing": true,
+  "window.titleBarStyle": "custom",
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontFamily": "Cascadia Code",
   "terminal.integrated.cursorStyle": "line",
-  "workbench.colorTheme": "Bearded Theme Light",
+  "workbench.colorTheme": "Everforest Dark",
   "workbench.iconTheme": "material-icon-theme",
   "explorer.decorations.badges": false,
   "explorer.confirmDelete": false,
@@ -232,4 +232,5 @@
       "strings": true
     }
   },
+  "security.workspace.trust.enabled": false,
 }
