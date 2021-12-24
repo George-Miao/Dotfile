@@ -15,8 +15,9 @@ alias pro="cd $DEV/Projects"
 alias st="speedtest"
 alias lofi="mpv https://www.youtube.com/watch\?v\=5qap5aO4i9A --no-video --volume=50 > /dev/null 2>&1 &"
 alias sys="sudo systemctl"
+alias codei="code-insiders"
 
-alias w="wrangler"
+alias wr="wrangler"
 
 alias y="ydcv -x"
 
@@ -28,3 +29,7 @@ alias yp="yadm push"
 alias ls="lsd"
 alias ll="lsd -lt --group-dirs first --date \"+%b %d - %H:%M\""
 alias la="ll -a"
+
+alias js="just"
+
+unalias sd
