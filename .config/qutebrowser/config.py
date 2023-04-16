@@ -1,11 +1,7 @@
 import os
 from typing import List
-import prctl
-import subprocess
-import signal
-import yaml
+import glob
 
-from pathlib import Path
 from qutebrowser.config.configfiles import ConfigAPI
 from qutebrowser.config.config import ConfigContainer
 
@@ -13,16 +9,8 @@ config: ConfigAPI = config
 c: ConfigContainer = c
 
 home: str = os.getenv('HOME')
-colors_relative = '.cache/wal/colors.json'
-daemon_relative = '.config/qutebrowser/qutewald.py'
-colors_absolute = os.path.join(home, colors_relative)
-daemon_absolute = os.path.join(home, daemon_relative)
 
 config.load_autoconfig()
-# config.source('qutewal.py')
-
-with (Path.home() / '.cache/wal/qutebrowser.yml').open() as f:
-    yaml_data = yaml.safe_load(f)
 
 
 def dict_attrs(obj, path=''):
@@ -33,9 +21,6 @@ def dict_attrs(obj, path=''):
         yield path, obj
 
 
-for k, v in dict_attrs(yaml_data):
-    config.set(k, v)
-
 c.tabs.padding = {
     "top": 15,
     "bottom": 15,
@@ -43,20 +28,25 @@ c.tabs.padding = {
     "right": 10,
 }
 
+c.content.javascript.enabled = True
+
 c.statusbar.padding = {
-    "top": 6,
-    "bottom": 6,
-    "left": 6,
-    "right": 6,
+    "top": 10,
+    "bottom": 10,
+    "left": 10,
+    "right": 10,
 }
 
-css = ['base']
-c.content.user_stylesheets = list(map(lambda x: f"css/{x}.css", css))
-
+c.content.user_stylesheets = glob.glob("css/*.css")
+c.fonts.web.family.fixed = "Cascadia Code PL"
 c.aliases['src'] = 'config-source'
+c.aliases.update({
+    'save-to-zotero':
+    "jseval javascript:function save2zotero(){"
+    "var d=document; var s=d.createElement('scr'+'ipt');"
+    "s.setAttribute('src', 'https://www.zotero.org/bookmarklet/loader.js');"
+    "(d.body?d.body:d.documentElement).appendChild(s);};save2zotero();void(0);"
+})
 
-
-# start iqutefy to refresh colors on the fly
-qutewald = subprocess.Popen(
-    [daemon_absolute, colors_absolute],
-    preexec_fn=lambda: prctl.set_pdeathsig(signal.SIGTERM))
+config.source('qutewal.py')
+config.source('interceptor.py')

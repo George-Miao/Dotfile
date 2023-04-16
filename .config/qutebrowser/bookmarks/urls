@@ -1,13 +1,23 @@
-http://192.168.1.2/ OpenWrt - LuCI
-https://router.miao.to/ OpenWrt - LuCI
-https://users.rust-lang.org/t/rust-best-practices/40436 Rust best practices - help - The Rust Programming Language Forum
-https://rust-unofficial.github.io/patterns/idioms/on-stack-dyn-dispatch.html On-Stack Dynamic Dispatch - Rust Design Patterns
-https://192.168.1.2:8006/#v1:0:=node%2FOlympus:4::::::: Olympus - Proxmox Virtual Environment
-https://samynitsche.de/3-monitoring-proxmox-with-prometheus-and-grafana Monitoring proxmox with prometheus and grafana - Samuel Nitsche
-https://samynitsche.de/ Samuel Nitsche
+https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index Oh-My-Zsh Git Cheat Sheet - Kapeli
+https://admin.google.com/ac/users/0haapch2a8bujg/security George Miao - Admin Console
+https://secure4.store.apple.com/us-edu/shop/signIn/orders?hgl=t&ssi=1AAABgidiD3MgpYGPBhTEc2f7FFIa4H4gF66N5uEx17iqGKsAXNrtK0wAAABNaHR0cHM6Ly9zZWN1cmU0LnN0b3JlLmFwcGxlLmNvbS91cy1lZHUvc2hvcC9vcmRlci9kZXRhaWwvODA2Nzk0L1cxMjExMjQ1MDA3fHwAAgELoldicl6AblbYVulSfdbhqRFmL5QAQ-LM-b_6fC8Hvg Order Status - Education - Apple
+https://www.lofi.cafe/ lofi.cafe - lofi music 🎧
+https://auth.remarkable.com/u/login/password?state=hKFo2SBRaERvVk1YUHhDY1lwNFNFd3ZzSHFOUUJGUmptSkpsdaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFN1amVxNDVzMXp0RUJCODlkSnNWWnRwZld6c3pQUnZKo2NpZNkgVzg4bkQ1UGlUcWE1WDlCYUIyOXJtaWxsZTBXODAyZks Log in to reMarkable
+https://bw.miao.dev/#/ Bitwarden Web Vault
+http://192.168.1.1/cgi-bin/luci/ OpenWrt - Overview - LuCI
+http://192.168.1.1/cgi-bin/luci/admin/network/dhcp OpenWrt - DHCP and DNS - LuCI
+https://doc.rust-lang.org/nightly/std/ffi/struct.OsString.html#impl-DerefMut-for-OsString OsString in std::ffi - Rust
 https://web.tel.onl/ Web Telegram Online
-https://192.168.1.2:8006/#v1:0:=node%2FOlympus:4:11:::::: Olympus - Proxmox Virtual Environment
-https://www.netim.com/direct/ NETIM Direct
-https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fmyaccount.google.com%2Fu%2F0%2Fadvanced-protection%2Fnow%2Fenroll%3Fpli%3D1&osid=1&rart=ANgoxcd0LPeU8RlSrOsGtRI0Rrz3YNQzwAtswfgKTJHHnf8ldw-k41oWy_V1O00Geblrjd7f30zP0kLijAGtFZPNlaqxGbM0ZA&faa=1&TL=AM3QAYbf8pOD4UFpAg1xZHDQ8YXbJ1fLCW4MVrHMKlgeCWFNjGWHa3ykuJPDf2g9&flowName=GlifWebSignIn&cid=1&flowEntry=ServiceLogin Sign in - Google Accounts
-https://10.0.0.2:8006/#v1:0:=lxc%2F303:4:::::8:=consolejs: Olympus - Proxmox Virtual Environment
-https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252F&hl=en&passive=false&service=youtube&uilel=0&flowName=GlifWebSignIn&flowEntry=AddSession&cid=1&navigationDirection=forward&TL=AM3QAYZsNoAh_AVHBme6SAnZnYAUwAIxxEf0CCJ7TEURNwHNHX4VYFXdMknkutpt YouTube
+https://github.com/rust-lang/rust/issues/26046 Opaque error message when typechecking closure · Issue #26046 · rust-lang/rust
+https://accounts.google.com/signin/v2/challenge/pwd?continue=https%3A%2F%2Fpasswords.google.com%2Fcheckup%2Fresults%3Fep%3D2%26rvt%3DaGjwhvf9nlzuPUQ99LxkLCjzZ0U%253A1671228819791%26continue%3Dhttps%253A%252F%252Fmyaccount.google.com%252Fsecurity-checkup%252F6%253Fcontinue%253Dhttps%25253A%25252F%25252Fmeet.google.com%25252Fmvw-iszq-ydg%2526continue%253Dhttps%25253A%25252F%25252Faccounts.google.com%25252FServiceLogin%25253Fcontinue%25253Dhttps%2525253A%2525252F%2525252Fmeet.google.com%2525252Fmvw-iszq-ydg%252526hl%25253Den%252526authuser%25253D0%252526passive%25253Dtrue%252526sarp%25253D1%252526aodrpl%25253D1%252526checkedDomains%25253Dyoutube%252526checkConnection%25253Dyoutube%2525253A169%2525253A0%252526pstMsg%25253D1%252526osid%25253D1%2526flowType%253D1%2526hl%253Den%2526hl%253Den%2526rapt%253DAEjHL4Nqm4wBAdpHJTh15P5jqS5b00QYeI8FHROWCq_v12G46YZetHaJt4fyIj-o6Sf_qvCZFiOCG_TShNMCoqhIwvHJmrhtNw%2526rapt%253DAEjHL4Nqm4wBAdpHJTh15P5jqS5b00QYeI8FHROWCq_v12G46YZetHaJt4fyIj-o6Sf_qvCZFiOCG_TShNMCoqhIwvHJmrhtNw%26rapt%3DAEjHL4Nqm4wBAdpHJTh15P5jqS5b00QYeI8FHROWCq_v12G46YZetHaJt4fyIj-o6Sf_qvCZFiOCG_TShNMCoqhIwvHJmrhtNw%26hl%3Den%26hl%3Den&hl=en&sarp=1&scc=1&rart=ANgoxcfIbbmvu6fuqru0VoquiL8LeBYnPc0qrpzoeh1rCARd0srrh0qbk65tjmhvXgN8kjjtTqmvM7Jgmr2PoCNgcQoMqqRw0Q&TL=AC7eWV2VSaqr9yrYj0ZA4yAcpBN05WU5CzbjNuEsPPJ5lqVQtgMZRRh4gKgPyczG&flowName=GlifWebSignIn&cid=1&flowEntry=ServiceLogin Sign in - Google Accounts
+https://pve.lan:8006/#v1:0:=lxc%2F310:4:=jsconsole:=contentVztmpl:::8:=consolejs: us - Proxmox Virtual Environment
+https://eservice.nationalgeneral.com/service/register National General MyAccount
+https://docs.rs/futures-executor/0.3.26/futures_executor/struct.LocalPool.html#method.run LocalPool in futures_executor - Rust
+https://web.tel.onl/#-1803619264 Web Telegram Online
+https://www.google.com/search?q=kafka%20index%20size kafka index size - Google 搜尋
+https://ceac.state.gov/genniv/ Nonimmigrant Visa - Instructions Page
+https://atlas.my.salesforce-sites.com/SiteRegister?refURL=https%3A%2F%2Fatlas.my.salesforce-sites.com%2F%3Flanguage%3DChinese%2520%28Simplified%29%26country%3DChina https://atlas.my.salesforce-sites.com/SiteRegister?refURL=https%3A%2F%2Fatlas.my.salesforce-sites.com%2F%3Flanguage%3DChinese%2520%28Simplified%29%26country%3DChina
+https://web.tel.onl/#@keyboard_cn Web Telegram Online
+http://nextcloud.lan/index.php/login?user=Miao&direct=1 Login – Nextcloud
+https://raw.githubusercontent.com/wiki/qbittorrent/qBittorrent/WebUI-API-(qBittorrent-4.1).md https://raw.githubusercontent.com/wiki/qbittorrent/qBittorrent/WebUI-API-(qBittorrent-4.1).md
+https://github.com/qbittorrent/qBittorrent/wiki/WebUI-API-(qBittorrent-4.1)#get-peer-log WebUI API (qBittorrent 4.1) · qbittorrent/qBittorrent Wiki

@@ -9,7 +9,7 @@ set $mod Mod4
 # i3 behavior
 gaps inner 12
 font pango:Cascadia Code 12
-floating_modifier $mod 
+floating_modifier $mod
 for_window [class=.*] border pixel 0
 default_orientation vertical
 
@@ -32,6 +32,9 @@ assign [class="TelegramDesktop"] 2
 #                                   Start up                                   #
 # ---------------------------------------------------------------------------- #
 
+exec --no-startup-id i3 workspace number $ws1
+exec --no-startup-id i3 gaps top current set 55
+
 # Background
 exec --no-startup-id wal -i ~/.wallpaper -o ~/.cache/wal/dunst.sh
 exec --no-startup-id greenclip daemon
@@ -44,7 +47,6 @@ exec --no-startup-id alacritty
 exec --no-startup-id i3-layout-manager split
 
 # Others
-exec --no-startup-id i3 gaps top current set 55
 
 # ---------------------------------------------------------------------------- #
 #                                     Binds                                    #
@@ -62,14 +64,14 @@ bindsym $mod+Return exec alacritty
 # Rofi
 bindsym $alt+space exec rofi -show combi
 bindsym $alt+Tab exec rofi -kb-accept-entry '!Alt-Tab' -kb-row-down Alt-Tab -show window
-bindsym $mod+q exec ~/.config/rofi/scripts/wiki.sh
-bindsym --release $mod+v exec rofi -show "clipboard:greenclip print" 
+bindsym --release $mod+v exec rofi -show 'clipboard:greenclip print'
+bindsym $alt+m exec /home/pop/Sync/Dev/Scripts/rofi-hud.py
 
 # Switch between workspaces
 bindsym $mod+Tab exec i3 workspace next
 
 # Screenshot
-bindsym --release $mod+a exec /usr/bin/shot
+bindsym --release $mod+a exec /usr/bin/screenshot
 
 # Xprop
 bindsym --release $mod+p exec xprop >> /tmp/xprop
@@ -82,6 +84,7 @@ bindsym $mod+d workspace empty
 
 # Kill focused window
 bindsym $alt+F4 kill
+bindsym Ctrl+q kill
 
 # Alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -99,7 +102,10 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+h split h
 
 # Split in vertical orientation
-# Bindsym $mod+c split v 
+bindsym $mod+c split v
+
+# Float and move to center
+bindsym $mod+y floating enable, resize set 2400 px 1600 px, move position center
 
 # Enter fullscreen mode for the focused container
 bindsym $mod+m fullscreen toggle
@@ -120,16 +126,16 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # Switch to workspace
-bindsym $mod+1 workspace number $ws1
-bindsym $mod+2 workspace number $ws2
-bindsym $mod+3 workspace number $ws3
-bindsym $mod+4 workspace number $ws4
-bindsym $mod+5 workspace number $ws5
-bindsym $mod+6 workspace number $ws6
-bindsym $mod+7 workspace number $ws7
-bindsym $mod+8 workspace number $ws8
-bindsym $mod+9 workspace number $ws9
-bindsym $mod+0 workspace number $ws10
+bindsym $mod+1 workspace number $ws1; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+2 workspace number $ws2; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+3 workspace number $ws3; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+4 workspace number $ws4; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+5 workspace number $ws5; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+6 workspace number $ws6; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+7 workspace number $ws7; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+8 workspace number $ws8; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+9 workspace number $ws9; exec --no-startup-id i3 gaps top current set 55
+bindsym $mod+0 workspace number $ws10; exec --no-startup-id i3 gaps top current set 55
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -152,10 +158,15 @@ bindsym $mod+Shift+r restart
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
         # Same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
+        bindsym Left        resize shrink width 50 px
+        bindsym Down        resize grow height 50 px
+        bindsym Up          resize shrink height 50 px
+        bindsym Right       resize grow width 50 px
+
+        bindsym Ctrl+Left        resize shrink width 10 or 10 ppt
+        bindsym Ctrl+Down        resize grow height 10 or 10 ppt
+        bindsym Ctrl+Up          resize shrink height 10 or 10 ppt
+        bindsym Ctrl+Right       resize grow width 10 or 10 ppt
 
         # Back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"

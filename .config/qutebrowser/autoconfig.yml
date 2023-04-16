@@ -23,18 +23,56 @@ settings:
         '=': zoom-in
         pl: :spawn --userscript bitwarden.py
         x: tab-close
+  colors.prompts.bg:
+    global: '#444444'
+  colors.tabs.selected.even.bg:
+    global: black
+  colors.webpage.bg:
+    global: white
+  completion.height:
+    global: 40%
+  content.blocking.method:
+    global: both
+  content.desktop_capture:
+    https://meet.google.com: true
+    https://vc-jp.larksuite.com: true
+    https://web.tel.onl: true
   content.geolocation:
     global: ask
+    https://education.github.com: true
+    https://member.teladoc.com: true
+    https://www.aetna.com: true
+    https://www.bestbuy.com: false
+    https://www.firestonecompleteautocare.com: true
     https://www.google.com: true
     https://www.google.com.hk: false
+    https://www.regmovies.com: true
+  content.media.audio_capture:
+    https://discord.com: true
+    https://meet.google.com: true
+    https://mictests.com: true
+    https://syracuseuniversity.zoom.us: true
+    https://vc-jp.larksuite.com: true
+    https://web.tel.onl: true
+    https://www.kaiheila.cn: true
   content.notifications.enabled:
     https://blog.csdn.net: false
+    https://book.cathaypacific.com: false
+    https://freshrss-miao-dev.fly.dev: true
+    https://freshrss.miao.dev: true
     https://mail.google.com: true
+    https://mastodon.miao.dev: true
+    https://syracuseuniversity.zoom.us: true
+    https://vc-jp.larksuite.com: true
+    https://web.tel.onl: true
     https://webk.telegram.org: true
     https://www.bennish.net: true
+    https://www.netflix.com: true
     https://www.reddit.com: false
   content.proxy:
-    global: http://proxy.lan:7890/
+    global: system
+  content.register_protocol_handler:
+    https://calendar.google.com?cid=%25s: true
   editor.command:
     global:
     - code-insiders

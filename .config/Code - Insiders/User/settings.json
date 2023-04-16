@@ -1,43 +1,97 @@
-// @collapse
 {
   /* -------------------------------------------------------------------------- */
   /*                               General Config                               */
   /* -------------------------------------------------------------------------- */
-  "editor.fontFamily": "Cascadia Code, JetBrainsMono NerdFont, Jetbrains Mono",
+  /* Editor */
   // "editor.fontFamily": "Operator Mono SSm Lig Book, OperatorMonoSSmLig-Book, Cascadia Code, JetBrainsMono NerdFont, Jetbrains Mono",
+  "editor.fontFamily": "Cascadia Code, JetBrainsMono NerdFont, Jetbrains Mono",
   "editor.fontLigatures": true,
-  "editor.fontSize": 17,
+  "editor.fontSize": 16,
   "editor.tabSize": 2,
+  "editor.cursorStyle": "block",
   "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.enabled": true,
+  // "editor.formatOnSave": false,
   "editor.formatOnSave": true,
   "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.suggest.insertMode": "replace",
+  // "editor.snippetSuggestions": "",
   "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.renderWhitespace": "all",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  /* Security */
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
   "window.titleBarStyle": "custom",
+  "window.autoDetectColorScheme": true,
+  /* Terminal */
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontFamily": "Cascadia Code",
   "terminal.integrated.cursorStyle": "line",
-  "workbench.colorTheme": "Everforest Dark",
+  /* Workbench */
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Bearded Theme Solarized Light",
+  "workbench.preferredDarkColorTheme": "Everforest Dark",
+  "workbench.preferredLightColorTheme": "Bearded Theme Solarized Light",
+  "workbench.colorCustomizations": {
+    // Name of the theme you are currently using
+    "[Bearded Theme Light][Bearded Theme Solarized Light]": {
+      "editorInlayHint.foreground": "#787878bf",
+      "editorInlayHint.background": "#d1d1d150",
+      "editorInlayHint.parameterForeground": "#787878bf",
+      "editorInlayHint.parameterBackground": "#d1d1d150",
+    },
+  },
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook",
+    "git-rebase-todo": "gitlens.rebase"
+  },
+  /* Explorer */
   "explorer.decorations.badges": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
+  /* DiffEditor */
+  "diffEditor.ignoreTrimWhitespace": false,
+  /* Files */
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "http.proxy": "http://127.0.0.1:7890",
+  // "http.proxy": "http://proxy.lan:7890",
   /* -------------------------------------------------------------------------- */
   /*                                 Tool Config                                */
   /* -------------------------------------------------------------------------- */
+  /* SqlTools */
+  "sqltools.format": {
+    "reservedWordCase": "upper",
+    "linesBetweenQueries": 2,
+    "language": "sql"
+  },
+  "sqltools.useNodeRuntime": true,
   /* VS intellicode */
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   /* Git */
   "git.autofetch": true,
   "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
   "git.allowForcePush": true,
+  "git.confirmSync": false,
+  /* Copilot */
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": true,
+    "markdown": true
+  },
   /* Prettier */
   "prettier.quoteProps": "consistent",
   "prettier.singleQuote": true,
@@ -55,8 +109,8 @@
     "global": {
       "addWords": true,
       "description": "Global dictionary",
-      "path": "/home/pop/.config/Code - Insiders/User/dictionary.txt",
-      "name": "Global",
+      "path": "~/.config/Code - Insiders/User/dictionary.txt",
+      "name": "Global"
     }
   },
   /* Todo Tree */
@@ -72,79 +126,126 @@
     "XXX",
     "[ ]",
     "@todo",
-    "todo"
+    "todo",
+    "WIP"
   ],
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   /* Gitlens */
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.defaultGravatarsStyle": "mp",
-  "gitlens.statusBar.enabled": false,
   /* importSorter */
   "importSorter.importStringConfiguration.hasSemicolon": false,
-  /* AutoCloseTag */
-  "auto-close-tag.activationOnLanguage": [
-    "*"
-  ],
-  "auto-close-tag.disableOnLanguage": [
-    "typescript",
-    "rust"
-  ],
   /* Minify */
   "minify.minifyExistingOnSave": true,
-  /* Qiniu */
-  "qiniu.enable": true,
-  /* Vetur */
-  "vetur.format.enable": true,
-  "vetur.format.defaultFormatter.html": "prettyhtml",
-  "vetur.format.defaultFormatter.js": "prettier",
-  "vetur.format.defaultFormatter.ts": "prettier",
-  "vetur.format.scriptInitialIndent": true,
-  "vetur.format.styleInitialIndent": true,
   /* Project Manager */
   "projectManager.git.baseFolders": [
-    "/home/pop/Dropbox/Dev/Projects",
-    "/Users/Miao/Dropbox/Dev"
+    "/home/pop/Sync/Dev/Projects",
+    "/Users/pop/Sync/Dev/Projects"
   ],
-  "projectManager.sortList": "Recent",
   "projectManager.groupList": true,
   "projectManager.removeCurrentProjectFromList": false,
   "projectManager.showProjectNameInStatusBar": true,
-  /* Code Snap */
-  "codesnap.realLineNumbers": true,
-  "codesnap.backgroundColor": "#ccc",
-  "codesnap.boxShadow": "rgba(0, 0, 0, 0.55) 0px 20px 68px",
-  /* Color info */
-  "colorInfo.languages": [
-    {
-      "selector": "css",
-      "colors": "css"
-    },
-    {
-      "selector": "sass",
-      "colors": "css"
-    },
-    {
-      "selector": "scss",
-      "colors": "css"
-    },
-    {
-      "selector": "less",
-      "colors": "css"
-    },
-    {
-      "selector": "jsonc",
-      "colors": "css"
-    }
-  ],
   /* Mongo DB */
   "mdb.confirmRunAll": false,
   "mdb.defaultLimit": 10000,
-  /* DrawIO */
-  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
-  /* Scroll Faster */
-  "scrollFaster.scrollByLines": 4,
-  "scrollFaster.cursorFollowsScroll": true,
-  /********** Language Config **********/
+  /* Redhat */
+  "redhat.telemetry.enabled": false,
+  /* Trailing Space */
+  "trailing-spaces.trimOnSave": true,
+  /* LaTeX Workshop */
+  "latex-workshop.intellisense.package.enabled": true,
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-xelatex",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.nav",
+    "*.dvi",
+    "*.synctex.gz"
+  ],
+  "latex-workshop.latex.outDir": "out",
+  "latex-workshop.latex.autoBuild.interval": 1000,
+  "latex-workshop.view.pdf.viewer": "tab",
+  /* Toggle Quotes */
+  "togglequotes.chars": [
+    "\"",
+    "'",
+    "`"
+  ],
+  /* Workspace Sidebar */
+  "workspaceSidebar.folder": "~/Dev/Workspaces",
+  /* Even Better Toml */
+  "evenBetterToml.formatter.alignEntries": true,
+  "evenBetterToml.formatter.alignComments": true,
+  "evenBetterToml.formatter.arrayAutoExpand": false,
+  "evenBetterToml.formatter.trailingNewline": true,
+  /* Vale */
+  "vale.core.useCLI": true,
+  /* Bracket Lens */
+  "bracketLens.mode": "on-save",
+  /* Svelte */
+  "svelte.enable-ts-plugin": true,
+  /* html-css-completion */
+  "html-css-class-completion.enableEmmetSupport": true,
+  "html-css-class-completion.HTMLLanguages": [
+    "html",
+    "vue",
+    "razor",
+    "blade",
+    "handlebars",
+    "twig",
+    "django-html",
+    "php",
+    "markdown",
+    "erb",
+    "ejs",
+    "svelte"
+  ],
+  /* Windicss Intellisense */
+  "windicss.sortOnSave": true,
+  /* Grammarly */
+  "grammarly.files.include": [
+    "**/README.md",
+    "**/readme.md",
+    "**/*.txt",
+    "posts/**/*.md"
+  ],
+  "typst-lsp.exportPdf": "onType",
+  /* -------------------------------------------------------------------------- */
+  /*                               Language Config                              */
+  /* -------------------------------------------------------------------------- */
   /** Typescript **/
   "typescript.format.enable": true,
   "typescript.format.semicolons": "remove",
@@ -158,49 +259,41 @@
   /* Json */
   "json.format.enable": true,
   /* Python */
-  "python.insidersChannel": "weekly",
   "python.languageServer": "Pylance",
+  "python.formatting.provider": "yapf",
   /* Rust */
-  "rust-analyzer.cargo.allFeatures": true,
-  "rust-analyzer.lruCapacity": 1024,
-  "rust-analyzer.assist.importGranularity": "module",
-  "rust-analyzer.inlayHints.parameterHints": false,
-  "rust-analyzer.inlayHints.typeHints": false,
-  "rust-analyzer.inlayHints.smallerHints": true,
-  "rust-analyzer.assist.importPrefix": "crate",
+  "rust-analyzer.imports.granularity.enforce": true,
+  "rust-analyzer.imports.granularity.group": "crate",
+  "rust-analyzer.imports.prefix": "crate",
+  "rust-analyzer.cargo.buildScripts.enable": true,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.chainingHints.enable": false,
+  "rust-analyzer.lru.capacity": 1024,
+  "rust-analyzer.cargo.features": "all",
+  "rust-analyzer.check.command": "clippy",
   /* Golang */
   "go.useLanguageServer": true,
   /* SVG */
-  "svg.preview.mode": "svg",
-  "togglequotes.chars": [
-    "\"",
-    "'",
-    "`"
-  ],
-  /* Workspace Sidebar */
-  "workspaceSidebar.folder": "~/Dropbox/Dev/Workspaces",
-  /* -------------------------------------------------------------------------- */
-  /*                          Language Overwrite Config                         */
-  /* -------------------------------------------------------------------------- */
+  "svg.preview.mode": "img",
+  /* Haskell */
+  "haskell.ghcupExecutablePath": "/home/pop/.ghcup/bin/ghcup",
+  "haskell.manageHLS": "GHCup",
+  /* Lua */
+  "Lua.telemetry.enable": false,
   "files.associations": {
     "MoeDarkrc": "properties",
     "*.kvconfig": "properties",
     "*.html": "html",
     "*.json": "jsonc",
-    "config": "i3"
-  },
-  "[typescript]": {},
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "config": "i3",
+    "*.swig": "html",
+    "*.rush": "rust"
   },
   "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust",
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[json]": {},
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
@@ -211,16 +304,12 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[Log]": {
-    "editor.wordWrap": "off",
     "editor.fontSize": 11
   },
   "[code-runner-output]": {
-    "editor.wordWrap": "off",
     "editor.fontSize": 11,
     "editor.lineHeight": 1.1
   },
-  "security.workspace.trust.untrustedFiles": "open",
-  "redhat.telemetry.enabled": false,
   "[dockercompose]": {
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.insertSpaces": true,
@@ -232,5 +321,62 @@
       "strings": true
     }
   },
-  "security.workspace.trust.enabled": false,
+  "[javascript][typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[markdown][latex][plaintext][css][postcss]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 100
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma-insider"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
+  },
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "github-actions.org-features": true,
+  "[caddyfile]": {
+    "editor.defaultFormatter": "matthewpi.caddyfile-support"
+  },
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "[elixir]": {
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+  },
+  "remote.SSH.externalSSH_ASKPASS": true,
+  "leetcode.workspaceFolder": "/Users/pop/.leetcode",
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.hint.commentDescription": false,
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+  "jupyter.askForKernelRestart": false,
+  "git.confirmForcePush": false,
+  "hexeditor.columnWidth": 28,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "xml.symbols.maxItemsComputed": 1000,
+  "xml.server.vmargs": "-Xmx128M",
 }

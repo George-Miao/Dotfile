@@ -1,6 +1,6 @@
 # First in first out
 home () {
-  PATH="$PATH:$HOME/$1"
+  PATH="$HOME/$1:$PATH"
 }
 
 # First in last out
@@ -12,9 +12,13 @@ home 'bin'
 home 'go/bin'
 home '.local/bin'
 home '.local/lib/python3.9/bin'
-home '.npm-packages/bin'
 home '.cargo/bin'
+home '.local/share/gem/ruby/3.0.0/bin'
+
+abs "$NPM_PACKAGES/bin"
+
+[[ -d $JAVA_HOME ]] && abs $JAVA_HOME
 
 export PATH
 
-export MANPATH="${MANPATH-$(manpath)}:$HOME/.npm-packages/bin/share/man"
+export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/bin/share/man"

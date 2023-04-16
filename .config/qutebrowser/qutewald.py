@@ -41,4 +41,3 @@ with daemon.DaemonContext(
 
     # kill after qutebrowser exits
     # not reached on SIGKILL
-    cleanup()

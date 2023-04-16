@@ -9,7 +9,6 @@ configuration {
   line-padding: 12;
   separator-style: "solid";
   dpi: 90;
-  theme: "~/.cache/wal/colors-rofi-light.rasi";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
@@ -110,8 +109,8 @@ configuration {
 /*	kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";*/
 /*	kb-row-left: "Control+Page_Up";*/
 /*	kb-row-right: "Control+Page_Down";*/
-/*	kb-row-up: "Up,Control+p,ISO_Left_Tab";*/
-/*	kb-row-down: "Down,Control+n";*/
+	kb-row-up: "Up,Control+p";
+	kb-row-down: "Down,Control+n";
 /*	kb-row-tab: "Tab";*/
 /*	kb-page-prev: "Page_Up";*/
 /*	kb-page-next: "Page_Down";*/
@@ -160,3 +159,5 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
+
+@theme "~/.cache/wal/colors-rofi-light.rasi"

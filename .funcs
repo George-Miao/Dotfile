@@ -1,9 +1,32 @@
 #!/usr/bin/env bash
 
+# Swap two files 
+function swap() {
+    local TMPFILE=tmp.$$
+    mv "$1" $TMPFILE && mv "$2" "$1" && mv $TMPFILE "$2"
+}
+
+function exists() {
+	command -v $0 >/dev/null 2>&1
+}
+
+# Start GPG
+function start_gpg() {
+  if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+    export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+  fi
+  export GPG_TTY=$(tty)
+  # gpg-connect-agent updatestartuptty /bye >/dev/null
+}
+
 # Reload GnuPG agent
 function reload_gpg() {
 	gpgconf --kill gpg-agent
 	gpg-connect-agent updatestartuptty /bye
+}
+
+function upgrade_codei {
+	yay -Sy visual-studio-code-insiders-bin --rebuildtree --rebuild --redownload --answerclean y --noconfirm
 }
 
 # Create a new directory and enter it
@@ -154,4 +177,4 @@ function bw-unlock(){
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
-function last(){ ls -1 $1 -t | head -n 1 }
+function last(){ ls -1 $1 -t | head -n ${2-1}}
