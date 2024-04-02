@@ -1,4 +1,4 @@
-# My Dotfiles - Desktop
+# My Dotfiles - This repo is *deprecated* in favor of [Nix Config](https://github.com/George-Miao/nix-config)
 
 Collection of my dotfiles, handled with yadm.
 
