@@ -1,4 +1,27 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
+
+# Clean all target/node_modules/etc dirs
+function clean_dirs() {
+  filelist="**/(node_modules|target|.venv|.next|.parcel-cache)"
+
+  du -shc $~filelist | sort -hr
+
+  if [ "$1" = "-rm" ]; then
+     trash $~filelist
+  fi
+}
+
+# Temporary stop sleeping
+function nosleep() {
+  systemctl stop --user i3lock-fancy.service
+  sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target --runtime
+}
+
+# Restore sleeping
+function dosleep() {
+  systemctl start --user i3lock-fancy.service
+  sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target --runtime
+}
 
 # Swap two files 
 function swap() {
@@ -177,4 +200,4 @@ function bw-unlock(){
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
-function last(){ ls -1 $1 -t | head -n ${2-1}}
+function last(){ local in="${1-./}"; ls -1 $in -t | head -n ${2-1} | xargs printf "%s/%s" $(readlink -f $in) }

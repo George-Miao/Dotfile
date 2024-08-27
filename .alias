@@ -28,11 +28,14 @@ alias yca="yadm add"
 alias yp="yadm push"
 
 alias ls="lsd"
-alias ll="lsd -lt --group-dirs first --date \"+%b %d - %H:%M\""
 alias la="ll -a"
+alias lt="ls --tree"
 
 alias s="sefr"
 
 alias js="just"
 
 alias egrep="grep -E"
+alias cdoc="cargo doc --no-deps --all-features"
+alias okular="gtk-launch org.kde.okular KP/KP17.pdf"
+alias print="lpr"

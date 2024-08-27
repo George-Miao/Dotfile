@@ -6,7 +6,6 @@ loadAntigen() {
   antigen bundle git
   antigen bundle rust
   antigen bundle sudo
-  antigen bundle fasd
   antigen bundle docker
 
   antigen bundle zsh-users/zsh-autosuggestions
@@ -27,7 +26,7 @@ export LC_ALL=en_US.UTF-8
 export ZSH="$HOME/.oh-my-zsh"
 export GDFUSE="$HOME/.gdfuse/default"
 export DEV="$HOME/Dev"
-export ACA="$HOME/Sync/Academy"
+export ACA="$HOME/Dropbox/Academy"
 export VISUAL="vim"
 export EDITOR="vim"
 export HISTFILE="$HOME/.zsh_history"
@@ -75,6 +74,7 @@ source "$(redo alias-file)"
 
 # bitwarden auto complete
 _evalcache bw completion --shell zsh; compdef _bw bw
+_evalcache zoxide init zsh --cmd j
 
 #############################################################################
 # Start of hygeia config block.
@@ -94,3 +94,8 @@ _evalcache cat ${HYGEIA_HOME}/shell/zsh/config.sh
 
 # GHCup configuration
 [ -f "/home/pop/.ghcup/env" ] && source "/home/pop/.ghcup/env" # ghcup-env
+
+# pnpm
+export PNPM_HOME="/home/pop/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

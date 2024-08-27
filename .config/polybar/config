@@ -7,10 +7,6 @@ content = " "
 [settings]
 screenchange-reload = true
 
-[global/wm]
-margin-top = 5
-margin-bottom = 5
-
 [color]
 background = ${xrdb:color0:#222}
 color1 = ${xrdb:color2}
@@ -47,19 +43,16 @@ cursor-scroll = ns-resize
 
 [bar/left]
 inherit = bar/base
-width = 21%
+width = 10%
 offset-x = 15
 
-modules-left = i3 powermenu
+modules-left = i3
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
 
 [bar/music]
 inherit = bar/base
-
-; Keet at right
-; offset-x = 59.4%
 
 ; Keep in center
 offset-x = 35.6%
@@ -69,7 +62,8 @@ modules-center = music
 [bar/right]
 inherit = bar/base
 
-offset-x = 87.6%
-width = 12%
-modules-left = audio 
-modules-right = date
+padding-left = 20pt
+offset-x = 77.6%
+width = 22%
+modules-left = tray
+modules-right = date audio

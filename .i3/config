@@ -8,6 +8,7 @@ set $mod Mod4
 
 # i3 behavior
 gaps inner 12
+gaps top 55
 font pango:Cascadia Code 12
 floating_modifier $mod
 for_window [class=.*] border pixel 0
